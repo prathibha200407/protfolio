@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prathibha K S - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header>
+  <nav class="navbar" role="navigation" aria-label="Main">
+    <div class="logo">Prathibha K S</div>
+
+    <!-- Mobile Menu Toggle -->
+    <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+
+    <!-- Nav links -->
+    <ul class="nav-links" id="navLinks" role="menubar" aria-hidden="false">
+      <li><a href="#hero" class="active">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#languages">Languages</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+      <li><a href="my_resume.pdf" target="_blank">Resume</a></li>
+    </ul>
+
+    <!-- Theme toggle -->
+    <div id="theme-toggle">
+      <svg id="theme-icon" viewBox="0 0 24 24" width="40" height="40">
+        <!-- Sun core -->
+        <circle class="sun-core" cx="12" cy="12" r="5" fill="yellow"/>
+        <!-- Sun rays -->
+        <g class="sun-rays">
+          <line x1="12" y1="1" x2="12" y2="5" stroke="orange" stroke-width="2"/>
+          <line x1="12" y1="19" x2="12" y2="23" stroke="orange" stroke-width="2"/>
+          <line x1="1" y1="12" x2="5" y2="12" stroke="orange" stroke-width="2"/>
+          <line x1="19" y1="12" x2="23" y2="12" stroke="orange" stroke-width="2"/>
+          <line x1="4" y1="4" x2="7" y2="7" stroke="orange" stroke-width="2"/>
+          <line x1="17" y1="17" x2="20" y2="20" stroke="orange" stroke-width="2"/>
+          <line x1="4" y1="20" x2="7" y2="17" stroke="orange" stroke-width="2"/>
+          <line x1="17" y1="7" x2="20" y2="4" stroke="orange" stroke-width="2"/>
+        </g>
+        <!-- Crescent Moon -->
+        <path class="moon" 
+          d="M12 2
+             A10 10 0 1 0 22 12
+             A6 6 0 1 1 12 2 Z"
+          fill="#f5f5f5" 
+          opacity="0"/>
+      </svg>
+    </div>
+
+  </nav>
+</header>
+
+
+
+
+<section id="hero" class="hero">
+  <!-- Video Background -->
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="robo.mp4" type="video/mp4">
+    <!-- Fallback image if video fails -->
+    <img src="fallback-bg.jpg" alt="Background fallback">
+  </video>
+  
+  <!-- Overlay for better text readability -->
+  <div class="hero-overlay"></div>
+  
+  <div class="hero-content">
+    <!-- Animated Text with Fade-in -->
+    <div class="hero-text fade-in">
+     <h1 class="hero-title">Hi, I'm <span id="typed-text"></span><span class="cursor">|</span></h1>
+
+      <p class="hero-subtitle">BCA Student | Aspiring Full Stack Developer | UI/UX Enthusiast</p>
+    </div>
+    
+
+<!-- CTA Buttons -->
+<div class="hero-ctas">
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=prathi72003@gmail.com" target="_blank" class="cta-btn primary p-30">Ping Me</a>
+  <a href="#feedback" class="cta-btn secondary">Contact</a> <!-- Adjust #contact if needed -->
+</div>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- ===== ABOUT ME SECTION ===== -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <!-- Profile Image -->
+    <div class="about-image">
+      <img src="my_img.JPG" alt="Prathibha K S">
+    </div>
+    <!-- Text & Skills -->
+    <div class="about-text">
+      <h2 class="about-title">Prathibha K S</h2>
+      <h3 class="about-role">Aspiring Full Stack Developer | UI/UX Enthusiast</h3>
+      <p class="about-desc">
+        I am a passionate BCA student with experience in front-end and back-end development. I love creating interactive websites, clean UI/UX designs, and efficient code. I constantly explore new technologies and strive to build meaningful projects that impact users positively.
+      </p>
+
+      <!-- Social Links -->
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/prathibha-ks/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/prathibha200407" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="mailto:prathi72003@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== PROJECTS SECTION ===== -->
+<section id="projects" class="projects-section">
+  <h2 class="section-title" style="text-align:center;">My Projects</h2>
+  <div class="projects-container">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <div class="project-summary">
+        <h3>Real estate secure data transmission website</h3>
+        <p class="project-tech">.NET Framework, Triple DES, Blowfish, MSSQL</p>
+        <button class="project-details-btn">View Details</button>
+      </div>
+      <div class="project-details" style="display: none;">
+        <div class="project-details-content">
+          <div class="project-text">
+            <p class="project-desc">Developed a secure web application using .NET Framework, Triple DES, and Blowfish algorithms, with MSSQL as the back-end. </p>
+              <p>The final output includes optimized road networks, predicted property values, and highlighted zones suitable for sustainable real estate development.</p>
+
+            </p>
+          </div>
+          <div class="carousel">
+            <img class="carousel-img active" src="r1.png" alt="Snippet 1">
+            <img class="carousel-img" src="r2.png" alt="Snippet 2">
+            <img class="carousel-img" src="r3.png" alt="Snippet 3">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <div class="project-summary">
+        <h3>Real Estate and Infrastructure Planning</h3>
+        <p class="project-tech">NDVI vegetation index, Random Forest Regressor</p>
+        <button class="project-details-btn">View Details</button>
+      </div>
+      <div class="project-details" style="display: none;">
+        <div class="project-details-content">
+          <div class="project-text">
+            <p class="project-desc">Analyzed satellite imagery for land suitability, cost estimation, and optimal path planning.</p> 
+            <p>Contains 3 models that is user, buyer and admin.</p> 
+            <p>Making sure that agreements, transactions, and property data are all recorded on the blockchain.</p>
+          </div>
+          <div class="carousel">
+            <img class="carousel-img active" src="b1.png" alt="Snippet 1">
+            <img class="carousel-img" src="b2.png" alt="Snippet 2">
+            <img class="carousel-img" src="b3.png" alt="Snippet 3">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+      <div class="project-summary">
+        <h3>Traditional Dresses Around the World – Frontend Website</h3>
+        <p class="project-tech">HTML, CSS</p>
+        <button class="project-details-btn">View Details</button>
+      </div>
+      <div class="project-details" style="display: none;">
+        <div class="project-details-content">
+          <div class="project-text">
+            <p class="project-desc">Visitors can explore how traditional clothing varies across nations, making the project both informative and interactive. This project demonstrates my skills in HTML, CSS, and JavaScript, 
+               focusing on UI design, responsiveness, and user experience.</p>
+          </div>
+          <div class="carousel">
+            <img class="carousel-img active" src="trad1.png" alt="Snippet 1">
+            <img class="carousel-img" src="trad2.png" alt="Snippet 2">
+            <img class="carousel-img" src="trad3.png" alt="Snippet 3">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card">
+      <div class="project-summary">
+        <h3>TourMate – Travel Booking Platform (Figma UI/UX)</h3>
+        <p class="project-tech">Figma, Wireframing, Prototyping, UI/UX Design</p>
+        <button class="project-details-btn">View Details</button>
+      </div>
+      <div class="project-details" style="display: none;">
+        <div class="project-details-content">
+          <div class="project-text">
+            <p class="project-desc">Designed a comprehensive travel booking platform prototype using Figma. The system includes features such as user authentication, transport and accommodation selection (flights, cars, buses, hotels, and meals), destination search, booking management, and online payment workflow. The project showcases expertise 
+              in UI/UX design, user journey mapping, and creating intuitive, interactive prototypes.</p>
+          </div>
+          <div class="carousel">
+            <img class="carousel-img active" src="f1.png" alt="Snippet 1">
+            <img class="carousel-img" src="f2.png" alt="Snippet 2">
+            <img class="carousel-img" src="f3.png" alt="Snippet 3">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PROJECT 5 -->
+    <div class="project-card">
+      <div class="project-summary">
+        <h3>Number Guessing Game – Frontend Website</h3>
+        <p class="project-tech">HTML, CSS, JS</p>
+        <button class="project-details-btn">View Details</button>
+      </div>
+      <div class="project-details" style="display: none;">
+        <div class="project-details-content">
+          <div class="project-text">
+            <p class="project-desc">An interactive anime-inspired guessing game where players test their logic and speed. With real-time hints, 
+              timer challenges, and smooth animations, it’s a fun way to combine coding and creativity.</p>
+          </div>
+          <div class="carousel">
+            <img class="carousel-img active" src="guess 1.png" alt="Snippet 1">
+            <img class="carousel-img" src="guess2.png" alt="Snippet 2">
+            <img class="carousel-img" src="guess3.png" alt="Snippet 3">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+</section>
+
+
+
+<!-- ===== SKILLS SECTION ===== -->
+<section id="skills" class="skills-section">
+  <h2 class="section-title" style="text-align:center;">Skills</h2>
+  <div class="skills-container">
+    <div class="skill-card">
+      <i class="fab fa-html5 skill-icon"></i>
+      <span class="skill-name">HTML5</span>
+    </div>
+    <div class="skill-card">
+      <i class="fab fa-css3-alt skill-icon"></i>
+      <span class="skill-name">CSS3</span>
+    </div>
+    <div class="skill-card">
+      <i class="fab fa-js-square skill-icon"></i>
+      <span class="skill-name">JavaScript</span>
+    </div>
+    <div class="skill-card">
+      <i class="fab fa-react skill-icon"></i>
+      <span class="skill-name">React</span>
+    </div>
+    <div class="skill-card">
+      <i class="fab fa-node skill-icon"></i>
+      <span class="skill-name">Node.js</span>
+    </div>
+    <div class="skill-card">
+      <i class="fas fa-database skill-icon"></i>
+      <span class="skill-name">MongoDB</span>
+    </div>
+    <div class="skill-card">
+      <i class="fab fa-python skill-icon"></i>
+      <span class="skill-name">Python</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== CERTIFICATIONS SECTION ===== -->
+<section id="certifications" class="certifications-section">
+  <h2 class="section-title" style="text-align:center;">Certifications</h2>
+  <div class="certifications-container">
+    <div class="cert-card">
+      <div class="cert-info">
+        <h3>Build Your Own Static Website</h3>
+        <p>Nxtwave</p>
+      </div>
+      <span class="cert-date">Dec 2024</span>
+    </div> 
+    <div class="cert-card">
+      <div class="cert-info">
+        <h3>Received NPTEL “Elite” certificate for Programming in Java</h3>
+        <p>NPTEL</p>
+      </div>
+      <span class="cert-date">Dec 2024</span>
+    </div>
+    <div class="cert-card">
+      <div class="cert-info">
+        <h3>Build Your Own Responsive Website</h3>
+        <p>Nxtwave</p>
+      </div>
+      <span class="cert-date">Dec 2024</span>
+    </div>
+    <div class="cert-card">
+      <div class="cert-info">
+        <h3>Google Cloud Engineering Certificate</h3>
+        <p>Google Cloud</p>
+      </div>
+      <span class="cert-date">Dec 2024</span>
+    </div>
+    <div class="cert-card">
+      <div class="cert-info">
+        <h3>Earned the Google Cloud Engineering Certificate.  </h3>
+        <p>Google Cloud</p>
+      </div>
+      <span class="cert-date">Dec 2024</span>
+    </div>  
+    <div class="cert-card">
+      <div class="cert-info">
+        <h3>AI-driven automation workflows project using Cursor AI, Pipedream, MCP servers</h3>
+        <p>Nxtwave</p>
+      </div>
+      <span class="cert-date">Dec 2024</span>
+    </div>  
+
+
+    <div class="cert-card">
+      <div class="cert-info">
+        <h3>Completed 2 industry-ready projects as part of the Growth Circle 1buildAThon. </h3>
+        <p>Nxtwave</p>
+      </div>
+      <span class="cert-date">Dec 2024</span>
+    </div>
+
+    <div class="cert-card">
+      <div class="cert-info">
+        <h3>Awarded certificate for AI-driven automation workflows project using Cursor AI, Pipedream, and MCP servers.  </h3>
+        <p>Nxtwave</p>
+      </div>
+      <span class="cert-date">Dec 2024</span>
+    </div>
+
+
+    <div class="cert-card">
+      <div class="cert-info">
+        <h3>XPM 4.0 Fundamentals Certificate covering identity, integrity, and goal setting</h3>
+        <p>Nxtwave</p>
+      </div>
+      <span class="cert-date">Dec 2024</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EDUCATION SECTION ===== -->
+<section id="education" class="education-section">
+  <h2 class="section-title" style="text-align:center;">Education</h2>
+  <div class="education-container"> 
+    <div class="edu-card">
+      <h3>MCA</h3>
+      <p>Amrita University</p>
+      <span class="edu-year">2026</span>
+      
+    </div>
+    <div class="edu-card">
+      <h3>BCA</h3>
+      <p>Amrita University</p>
+      <span class="edu-year">2023</span>
+    </div>
+    <div class="edu-card">
+      <h3>PU</h3>
+      <p>JSS PU College</p>
+      <span class="edu-year">2020</span>
+    </div>
+    <div class="edu-card">
+      <h3>High School</h3>
+      <p>Swarana High School</p>
+      <span class="edu-year">2018</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LANGUAGES SECTION ===== -->
+<section id="languages" class="languages-section">
+  <h2 class="section-title">Languages Known</h2>
+
+  <div class="language" data-percentage="99">
+    <p>English <span class="lang-percent">0%</span></p>
+    <div class="progress-bar"><div class="progress"></div></div>
+  </div>
+  <div class="language" data-percentage="100">
+    <p>Kannada <span class="lang-percent">0%</span></p>
+    <div class="progress-bar"><div class="progress"></div></div>
+  </div>
+  <div class="language" data-percentage="60">
+    <p>Hindi <span class="lang-percent">0%</span></p>
+    <div class="progress-bar"><div class="progress"></div></div>
+  </div>
+
+</section>
+
+<!-- ===== FEEDBACK SECTION ===== -->
+<section id="feedback" class="feedback-section">
+  <h2 class="section-title">Feedback</h2>
+  <form id="feedback-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Feedback" required></textarea>
+    <button type="submit">Send Feedback</button>
+  </form> 
+  <div id="feedback-success">Thanks for your feedback! 🎉</div>
+
+  <!-- Confetti container -->
+  <div id="confetti-container"></div>
+</section>
+
+
+<!-- ===== CHATBOT ===== -->
+<div id="chatbot">
+  <div id="chatbot-toggle">🤖</div>
+  <div id="chatbot-box">
+    <div id="chatbot-messages"></div>
+    <input type="text" id="chatbot-input" placeholder="Ask me about my portfolio...">
+    <button id="chatbot-send">Send</button>
+  </div>
+</div>
+
+<!-- JS --> 
+<script src="scripts.js"></script>
+</body>
+</html>
