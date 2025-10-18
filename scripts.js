@@ -1,6 +1,6 @@
 // ===== HERO TYPING EFFECT =====
 const typedText = document.getElementById('typed-text');
-const texts = ["Prathibha K S", "BCA Student", "Aspiring Full Stack Developer", "UI/UX Enthusiast"];
+const texts = ["Prathibha K S", "MCA Student", "Aspiring Full Stack Developer", "UI/UX Enthusiast"];
 let textIndex = 0;
 let charIndex = 0;
 const typingSpeed = 150;
