@@ -360,3 +360,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener('scroll', animateCertifications);
 window.addEventListener('load', animateCertifications);
+
