@@ -262,11 +262,11 @@ function getBotResponse(input) {
   const section = scrollToSection(text);
   if (section) return `🚀 Sure! Let me show you the ${section} section 👇`;
   if (text.includes("your name") || text.includes("who are you") || text.includes("introduce"))
-    return "Hi 👋! My name is <b>Prathibha K S</b> 😊. I’m a BCA graduate and currently pursuing MCA at Amrita University. I’m passionate about becoming a <b>Full Stack Developer</b> 💻 and love <b>UI/UX design</b> 🎨.";
+    return "Hi 👋! My name is <b>Prathibha K S</b> 😊. I’m a MCA graduate and currently pursuing MCA at Amrita University. I’m passionate about becoming a <b>Full Stack Developer</b> 💻 and love <b>UI/UX design</b> 🎨.";
   if (text.includes("skills"))
     return "Here are my main skills 💻:<br>👉 HTML, CSS, JavaScript<br>👉 Python<br>👉 React<br>👉 MongoDB";
   if (text.includes("education"))
-    return "📚 My education:<br>🎓 MCA - Amrita University (2026)<br>🎓 BCA - Amrita University (2023)<br>🏫 JSS PU College (2020)<br>🏫 Swarana High School (2018)";
+    return "📚 My education:<br>🎓 MCA - Amrita University (2026)<br>🎓 MCA - Amrita University (2023)<br>🏫 JSS PU College (2020)<br>🏫 Swarana High School (2018)";
   if (text.includes("contact") || text.includes("email") || text.includes("reach you")) {
     setTimeout(() => window.location.href = "mailto:prathi72003@gmail.com", 500);
     return "📧 You can reach me at <b>prathi72003@gmail.com</b>. Opening your email client... ✉️";
@@ -360,4 +360,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener('scroll', animateCertifications);
 window.addEventListener('load', animateCertifications);
+
 
